@@ -14,9 +14,12 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+private:
+    void open();
 
 private:
     Ui::MainWindow *ui;
+    QAction *m_openAction;
 };
 
 #endif // MAINWINDOW_H
